@@ -1,0 +1,55 @@
+﻿@model MuhendislerBurada.Model.Models.Group
+
+@{
+    ViewBag.Title = "DeleteGroup";
+}
+
+<div class ="alert alert-block alert-error fade in">
+<strong>Grubu sil</strong>
+<br />
+     Grubu silmek istediğinizden emin misiniz?
+     <br />
+     <br />
+   
+<table>
+            <tr>
+                <td >
+                    Grup ismi
+                </td>
+                <td >
+                    @Html.DisplayFor(model => model.GroupName)
+                   
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    Grup açıklaması                    
+                </td>
+                <td >
+                    @Html.DisplayFor(model => model.Description)
+                </td>
+            </tr>
+            </table>
+            <br />
+              <p>
+            
+
+        @using (Html.BeginForm())
+{
+            @Html.AntiForgeryToken()
+    <p>
+      
+
+             <button class="btn btn-danger" type="submit"  value="Sil"  onclick ="Delete(@Model.GroupId)"> Sil</button>
+             <button class="btn" value="İptal"  type ="reset" onclick="window.location.href='@Url.Action("Index", "Group", new {id =Model.GroupId })'">
+        İptal</button>
+        
+    </p>
+      
+     
+ 
+ 
+
+}
+ 
+</div>

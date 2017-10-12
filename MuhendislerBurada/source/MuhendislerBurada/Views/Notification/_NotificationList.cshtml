@@ -1,0 +1,25 @@
+﻿@model IEnumerable<MuhendislerBurada.Web.ViewModels.NotificationViewModel>
+
+@foreach (var item in Model)
+{ 
+    <div class="alert alert-info">
+        @if (item.GroupId.ToString() != "0")
+        {             
+            @Html.ActionLink(item.FromUser.UserName, "UserProfile", "Account", new { id = item.FromUserId }, null)<text> seni </text> @Html.ActionLink(@item.Group.GroupName, "Index", "Group", new { id = @item.GroupId }, null) <text> grubuna davet etti. </text>
+            @Html.ActionLink("Gruba katıl", "JoinGroup", "Group", new { id = item.GroupId }, new { @class = "btn btn-primary btn-small", @style = "float:right" })
+        }
+        else if (item.GoalId.ToString() != "0")
+        {
+            @Html.ActionLink(item.FromUser.UserName, "UserProfile", "Account", new { id = item.FromUserId }, null)<text> seni </text> @Html.ActionLink(@item.Goal.GoalName, "Index", "Goal", new { id = @item.GoalId }, null) <text> ilanına başvuru için davet etti. </text>
+            @Html.ActionLink("Başvur", "SupportGoalNow", "Goal", new { id = item.GoalId }, new { @class = "btn btn-primary btn-small", @style = "float:right" })
+        }
+        else if (item.ToUserId.ToString() !="0")
+        {           
+            @Html.ActionLink(item.FromUser.UserName, "UserProfile", "Account", new { id = item.FromUserId }, null)<text> sana takip isteği gönderdi.</text> 
+            <span style = "float:right">
+                @Html.ActionLink("Kabul et", "AcceptRequest", "Account", new { touserId = item.ToUserId, item.FromUserId }, new { @class = "btn btn-primary btn-small" })
+                @Html.ActionLink("Reddet", "RejectRequest", "Account", new { touserId = item.ToUserId, item.FromUserId }, new { @class = "btn btn-primary btn-small" })
+            </span>
+        }
+    </div>
+}

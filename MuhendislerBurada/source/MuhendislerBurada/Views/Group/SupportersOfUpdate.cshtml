@@ -1,0 +1,28 @@
+﻿@model MuhendislerBurada.Web.ViewModels.GroupUpdateSupportersViewModel
+<div>
+    @if (Model.Users.Count() == 0)
+    {
+        <p class="span5 alert alert-info supporters-message">
+            Yok</p>  
+    }
+    @foreach (var item in Model.Users)
+    {
+        <div>
+            <div style="position: relative">
+                <div>
+                    <a href="@Url.Action("UserProfile", "Account", new { id = item.Id }, null)" >
+                        @Html.User().Avatar(item.ProfilePicUrl, new { @class = "span2" })
+                    </a>
+                </div>
+            </div>
+            <div>
+                @Html.ActionLink(@item.UserName, "UserProfile", "Account", new { id = item.Id }, null)
+            </div>
+            <div>@item.Email
+            </div>
+        </div>
+        <br />
+        <hr>
+              
+    }
+</div>

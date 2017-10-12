@@ -1,0 +1,49 @@
+﻿@model MuhendislerBurada.Model.Models.Update
+
+@{
+    ViewBag.Title = "_DeleteUpdate";
+}
+
+<div class="span12 alert alert-error fade in">
+      
+  <strong>Silmek istediğinizden emin misiniz..?</strong>
+
+
+    
+    <table style="font-size:13px;font-weight:bold;">
+        <tr >
+            <td>Mesaj :</td>
+            <td>@Html.DisplayFor(model => model.Updatemsg)</td>
+        </tr>
+        <tr>
+            <td>Status :</td>
+            <td>  
+                @Html.DisplayFor(model => model.status) 
+                @if (Model.Goal.Metric != null && Model.Goal.Target != null)
+                {
+                    @Model.Goal.Metric.Type  @:/ @Model.Goal.Target @Model.Goal.Metric.Type 
+                 }
+            
+            </td>
+            
+           
+        </tr>
+        
+        
+    </table>
+   
+    <div id="divDelete@(Model.UpdateId)">
+    </div>
+    @using (Html.BeginForm())
+    {
+        <p>
+            <button class="btn btn-danger" type="submit" value="Gönder">
+                Delete</button>
+                 <button class="btn" type="reset" value="İptal" onclick="Cancel('@Model.GoalId')">
+        İptal</button>
+        </p>
+      
+        
+    }
+   
+</div>

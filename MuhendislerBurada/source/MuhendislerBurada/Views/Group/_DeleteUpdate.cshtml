@@ -1,0 +1,44 @@
+﻿@model MuhendislerBurada.Model.Models.GroupUpdate
+
+@{
+    ViewBag.Title = "_DeleteUpdate";
+}
+
+<div class="span12 alert alert-block alert-error fade in">
+    
+  <strong>Bu güncellemeyi silmek istediğinizden emin misiniz?</strong>
+    
+    <table style="font-size:13px;font-weight:bold;">
+        <tr >
+            <td>  Mesaj :</td>
+            <td>@Html.DisplayFor(model => model.Updatemsg)</td>
+        </tr>
+        <tr>
+            <td>Durum :</td>
+            <td>
+               @Html.DisplayFor(model => model.status)
+                    @if (Model.GroupGoal.Metric != null && Model.GroupGoal.Target != null)
+                    {                        
+                            @Model.GroupGoal.Metric.Type  @:/ @Model.GroupGoal.Target @Model.GroupGoal.Metric.Type 
+                    }
+            </td>
+        </tr>
+        
+        
+    </table>
+    
+    <div id="divDelete@(Model.GroupUpdateId)">
+    </div>
+    @using (Html.BeginForm())
+    {
+        <p>
+            <button class="btn btn-danger" type="submit" value="Sil">
+                Sil</button>
+                 <button class="btn" type="reset" value="İptal" onclick="GroupCancel('@Model.GroupGoalId')">
+        İptal</button>
+        </p>
+      
+        
+    }
+   
+</div>

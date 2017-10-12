@@ -1,0 +1,97 @@
+﻿@model MuhendislerBurada.Web.ViewModels.GroupGoalFormModel
+@{
+    ViewBag.Title = "Create Goal";
+    Layout = "~/Views/Shared/_PageLayout.cshtml";
+}
+@*<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>*@
+<div class="well span10">
+    <h4>
+        İlan oluştur
+    </h4>
+    @Html.Partial("Header")
+    <br />
+    <div id="createGoal" class="well span8">
+        @using (Html.BeginForm("CreateGoal", "Group"))
+        {
+            @Html.AntiForgeryToken()
+            @Html.HiddenFor(m => m.GroupId)
+
+            @Html.ValidationSummary(true)
+            <table class="table ">
+                <tr>
+                    <td class="span12">
+                        @Html.TextBoxFor(model => model.GoalName, new { placeholder = "İlan başlığı" })
+                        @Html.ValidationMessageFor(model => model.GoalName)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="">
+                        @Html.TextBoxFor(model => model.Description, new { placeholder = "İlan açıklaması" })
+                        @Html.ValidationMessageFor(model => model.Description)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="">
+                        @Html.TextBoxFor(model => model.StartDate, new { @class = "ui-datepicker", @readonly = "readonly", @style = "display:block;float:left", placeholder = "Başlangıç tarihi" })
+                        @Html.ValidationMessageFor(model => model.StartDate)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="">
+                        @Html.TextBoxFor(model => model.EndDate, new { @class = "ui-datepicker", @readonly = "readonly", @style = "display:block;float:left", placeholder = "Bitiş tarihi" })
+                        @Html.ValidationMessageFor(model => model.EndDate)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        @Html.TextBoxFor(model => model.Target, new { placeholder = "Alım sayısı" })
+                        @Html.ValidationMessageFor(model => model.Target)
+                    </td>
+                </tr>
+                <tr>
+                  
+                    <td>@Html.TextBoxFor(model => model.AssignedTo, new { id = "AssignedUser", value = "", placeholder = "Assistan üye ", @readonly = "readonly" })
+                 <a href="#"  id="assigngoalsinfo" rel ="popover" data-content= "Arama yap" data-trigger ="hover" data-placement="top" data-originals-title ="Assign Goals"><i class="icon-info-sign"></i> </a>
+                    </td>
+                    <td>
+                        <a data-toggle="modal" href="#searchMember" onclick="SearchMember('@Model.GroupId');" class="btn btn-primary" title ="Asistan ata">Arama
+                        </a>  
+                    </td>
+                      <td><input type ="button" id "removeassignedto" class ="btn" value="Sil" onclick ="RemoveAssigned()"  title ="Asistan sil"/></td>
+                    <td>
+                    @Html.HiddenFor(m => m.AssignedGroupUserId, new { @id = "assignedgroupuserId" })
+                    @*<input type= "hidden" value = "abc" id ="assignedgroupuserId" />*@</td>
+                </tr>
+            </table>
+            <p>
+                <button class="btn btn-primary" type="submit" value="Oluştur">
+                    Oluştur</button>
+                <button class="btn" type ="reset" value="İptal" onclick="window.location.href='@Url.Action("Index", "Group", new { @id = Model.GroupId })'">
+                    İptal</button></p>
+               
+
+        }
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $('.ui-datepicker').each(function (i, v) {
+            $(v).datepicker({
+                dateFormat: 'dd-M-yy',
+                buttonImage: '@Url.Content("~/Content/calendar.gif")',
+                buttonImageOnly: true,
+                showOn: "button"
+            });
+        });
+    });
+
+    $(function () {
+        $("#assigngoalsinfo").popover();
+    });
+    $(function () {
+        $("#targetinfo").popover();
+    });
+</script>

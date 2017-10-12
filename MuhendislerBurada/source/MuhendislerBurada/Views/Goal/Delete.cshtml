@@ -1,0 +1,76 @@
+﻿@model MuhendislerBurada.Model.Models.Goal
+@{
+    ViewBag.Title = "Delete Goal";
+}
+@*<div class="alert fade in">
+<button type ="button" class ="close" data-dismiss ="alert" >×</button>
+            <strong class="alert-heading">
+                Warning!</strong>
+            Best check your self, before deleting
+        </div>*@
+<div class="alert alert-block alert-error fade in">
+    <strong>
+        İlanı sil</strong>
+  <br />
+        Bu ilanı silmek istediğinizden emin misiniz?
+<br />
+<br />
+
+
+    <strong >@Html.DisplayFor(model => model.GoalName)</strong>
+    <table>
+        <tr >
+            <td class="display-label">
+                İlan başlığı:
+            </td>
+            <td class="display-field">
+            &nbsp;&nbsp;&nbsp;
+                @Html.DisplayFor(model => model.GoalName)
+            </td>
+        </tr>
+        <tr>
+            <td class="display-label">
+                İlan açıklaması:
+            </td>
+            <td class="display-field">
+             &nbsp;&nbsp;&nbsp;
+                @Html.DisplayFor(model => model.Desc)
+            </td>
+        </tr>
+        <tr>
+            <td class="display-label">
+                Başlangıç tarihi:
+            </td>
+            <td class="display-field">
+             &nbsp;&nbsp;&nbsp;
+                @Html.DisplayFor(model => model.StartDate)
+            </td>
+        </tr>
+        <tr>
+            <td class="display-label">
+                Bitiş tarihi
+            </td>
+            <td class="display-field">
+             &nbsp;&nbsp;&nbsp;
+                @Html.DisplayFor(model => model.EndDate)
+            </td>
+            <td>@Html.HiddenFor(mbox => mbox.GoalId)
+            </td>
+        </tr>
+    </table>
+    <br />
+    <div id="divDelete@(Model.GoalId)">
+    </div>
+    @using (Html.BeginForm())
+    {
+        <p>
+            <button class="btn btn-danger" type="submit" value="Sil">
+                Sil</button>
+                 <button class="btn" type="reset" value="İptal" onclick="window.location.href='@Url.Action("Index", "Goal", new { id = @Model.GoalId })'">
+        İptal</button>
+        </p>
+      
+        
+    }
+   
+</div>

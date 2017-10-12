@@ -1,0 +1,508 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MuhendislerBurada.Bootstrapper" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>App_Start\Bootstrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.BundleConfig" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Start\BundleConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.FilterConfig" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>App_Start\FilterConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.RouteConfig" Collapsed="true">
+    <Position X="4" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Start\RouteConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Startup" Collapsed="true">
+    <Position X="11" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAgAAAAAAAAAA=</HashCode>
+      <FileName>App_Start\Startup.Auth.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.MvcApplication" Collapsed="true">
+    <Position X="7.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Global.asax.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.Controllers.AccountController" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IQAKAACQQiAAIoChAQGBEgkwBEYBICIAgEAVAES0IAA=</HashCode>
+      <FileName>Controllers\AccountController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.Controllers.EmailRequestController" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAEAAAAgAAAAAAAAAAAAAAAAhAAAIAAAAAA=</HashCode>
+      <FileName>Controllers\EmailRequestController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.Controllers.GoalController" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BACAACcAQgCAQMCgBIUAQgQiBAcAGGCKhDFACA0wACI=</HashCode>
+      <FileName>Controllers\GoalController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.Controllers.GroupController" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UaKAAI0AwgAAQESkrBRjxgShAgYAFASKkDFEIIWYQFQ=</HashCode>
+      <FileName>Controllers\GroupController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.Controllers.NotificationController" Collapsed="true">
+    <Position X="9.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAACAAAAAAAAABAIAAAAAAAFAIkAAAIA=</HashCode>
+      <FileName>Controllers\NotificationController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.Controllers.SearchController" Collapsed="true">
+    <Position X="5.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAggAAAACAAAAAAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>Controllers\SearchController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Controllers.HomeController" Collapsed="true">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAwgAAABGAKAAgAAQABAIAAAQABCEAAAAgAMA=</HashCode>
+      <FileName>Controllers\HomeController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.Helpers.MuhendislerBuradaSessionFacade" Collapsed="true">
+    <Position X="9.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAgAAAAAAAAABAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Helpers\MuhendislerBuradaSessionFacade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.Mailers.UserMailer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAEAAAIAAAgAAAEAAAAAAAA=</HashCode>
+      <FileName>Mailers\UserMailer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MuhendislerBurada.Mappings.AutoMapperConfiguration" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mappings\AutoMapperConfiguration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Mappings.DomainToViewModelMappingProfile" Collapsed="true">
+    <Position X="14.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mappings\DomainToViewModelMappingProfile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Mappings.ViewModelToDomainMappingProfile" Collapsed="true">
+    <Position X="12.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mappings\ViewModelToDomainMappingProfile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Models.ExternalLoginConfirmationViewModel" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Models\AccountViewModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Models.ManageUserViewModel" Collapsed="true">
+    <Position X="4" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAEAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Models\AccountViewModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Models.LoginViewModel" Collapsed="true">
+    <Position X="2.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAACAAAAAAAgAAA=</HashCode>
+      <FileName>Models\AccountViewModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Models.RegisterViewModel" Collapsed="true">
+    <Position X="0.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAQAAAAAAIAA=</HashCode>
+      <FileName>Models\AccountViewModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Properties.Resources" Collapsed="true">
+    <Position X="2.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIACAMIAEAAgBAAEABGAAAAQAAAAQHAYgAChAAAMA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.Services.CreateNotificationList" Collapsed="true">
+    <Position X="12.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Services\CreateNotificationList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.ViewModels.ChangePasswordFormModel" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAEAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>ViewModels\ChangePasswordFormModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.ViewModels.CommentFormModel" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAABAAAAAAAAAAAAAgAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\CommentFormModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.ViewModels.CommentsViewModel" Collapsed="true">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAABAAAAAAAAAAAAAgAAAAAAAAgAIACAAAAAAA=</HashCode>
+      <FileName>ViewModels\CommentsViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.ViewModels.EmailFormModel" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\EmailFormModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.ViewModels.FocusFormModel" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAEAAAggAAAAAAAAAAAAAAAAAAAAgAACAAAAAA=</HashCode>
+      <FileName>ViewModels\FocusFormModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.ViewModels.FocusViewModel" Collapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAGAEAAAggAAAAABCAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>ViewModels\FocusViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.ViewModels.FollowersViewModel" Collapsed="true">
+    <Position X="11" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAACABAAAAAAAAAAgAAAAAAAAAAQAAAAAAAAg=</HashCode>
+      <FileName>ViewModels\FollowersViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.ViewModels.FollowingViewModel" Collapsed="true">
+    <Position X="12.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAACABAAAAAAAAAAgAAAAAAAAAAQAAAAAAAAg=</HashCode>
+      <FileName>ViewModels\FollowingViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.ViewModels.FollowRequestFormModel" Collapsed="true">
+    <Position X="14.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAwAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>ViewModels\FollowRequestFormModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.ViewModels.FollowRequestViewModel" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAwAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>ViewModels\FollowRequestViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.ViewModels.GoalFormModel" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAQAQAAAAAAAAAAAAACggAAAABAAgAAAAQEAAAAA=</HashCode>
+      <FileName>ViewModels\GoalFormModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.ViewModels.GoalListViewModel" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAQAAAAAggAAAAAAAgAwAAQEAAAAA=</HashCode>
+      <FileName>ViewModels\GoalListViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.ViewModels.GoalsPageViewModel" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAgAAAAAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\GoalsPageViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.ViewModels.GoalSupporterViewModel" Collapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAACAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\GoalSupporterViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.ViewModels.GoalViewModel" Collapsed="true">
+    <Position X="11" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAABARAUAQAAAAAgABAAACggAAAAAAAiAgAAQkAABAA=</HashCode>
+      <FileName>ViewModels\GoalViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.ViewModels.GroupCommentFormModel" Collapsed="true">
+    <Position X="12.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAABAAAAAAAAAAAAAgIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\GroupCommentFormModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.ViewModels.GroupCommentsViewModel" Collapsed="true">
+    <Position X="14.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAARAAAABAAAAAAAAAAAAAgIAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>ViewModels\GroupCommentViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.ViewModels.GroupFormModel" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAgAAAAAAAAAAgAAAAAAAAAAgAAAAAAAAE=</HashCode>
+      <FileName>ViewModels\GroupFormModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.ViewModels.GroupGoalFormModel" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAUAUAAgggAAAAAAAECAgAAAABAACAggBEkAAAAA=</HashCode>
+      <FileName>ViewModels\GroupGoalFormModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.ViewModels.GroupGoalViewModel" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACABAXAUAQgggAAgAAACECggAAAAAAACAkwBAkAAAAA=</HashCode>
+      <FileName>ViewModels\GroupGoalViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.ViewModels.GroupMemberViewModel" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAGAEAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>ViewModels\GroupMemberViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.ViewModels.GroupRequestFormModel" Collapsed="true">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\GroupRequestFormModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.ViewModels.GroupRequestViewModel" Collapsed="true">
+    <Position X="11" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAEAEAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\GroupRequestViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.ViewModels.GroupsItemViewModel" Collapsed="true">
+    <Position X="12.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAgAAAAAAAAAAgAAAAAAAAAAwAAAAAAAAE=</HashCode>
+      <FileName>ViewModels\GroupsItemViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.ViewModels.GroupsPageViewModel" Collapsed="true">
+    <Position X="14.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>ViewModels\GroupsPageViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.ViewModels.GroupUpdateFormModel" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQBAAAEAAgAAAAAAABAAAgIAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>ViewModels\GroupUpdateFormModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.ViewModels.GroupUpdateListViewModel" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAACAAAAAAAAACAAAAAAAAAgA=</HashCode>
+      <FileName>ViewModels\GroupUpdateListViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.ViewModels.GroupUpdateSupportersViewModel" Collapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>ViewModels\GroupUpdateSupportersViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.ViewModels.GroupUpdateViewModel" Collapsed="true">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAQAAQgAQAAAAABAAAgIACAAAAAAAAwAAAAAAAA=</HashCode>
+      <FileName>ViewModels\GroupUpdateViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.ViewModels.GroupViewModel" Collapsed="true">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ASAAACQEAAAgAAAAAAACARAAAAAAAABEAgAAAAAAIAE=</HashCode>
+      <FileName>ViewModels\GroupViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.ViewModels.HomeViewModel" Collapsed="true">
+    <Position X="11" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\HomeViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.ViewModels.InviteEmailFormModel" Collapsed="true">
+    <Position X="12.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\InviteEmailFormModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.ViewModels.InviteUserFormModel" Collapsed="true">
+    <Position X="14.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAgAAAEAAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\InviteUserFormModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.ViewModels.MemberViewModel" Collapsed="true">
+    <Position X="5.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAEAEAAAAAAAAAAAAAAgAAAAAAAAAAQgAAAAAAAA=</HashCode>
+      <FileName>ViewModels\MemberViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.ViewModels.NotificationsViewModel" Collapsed="true">
+    <Position X="11" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CSQRwQA0FQgBgAAAAABCwCgJAgABCAiiB8wCQCAAAgk=</HashCode>
+      <FileName>ViewModels\NotificationsViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.ViewModels.NotificationViewModel" Collapsed="true">
+    <Position X="12.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAwkAkAAAgAAAAAAAAAAAAAAAAAAAgAAAQACAAAAA=</HashCode>
+      <FileName>ViewModels\NotificationViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.ViewModels.SearchViewModel" Collapsed="true">
+    <Position X="7.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAGAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>ViewModels\SearchViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.ViewModels.UpdateFormModel" Collapsed="true">
+    <Position X="12.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAIQAAAAAAAA=</HashCode>
+      <FileName>ViewModels\UpdateFormModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.ViewModels.UpdateListViewModel" Collapsed="true">
+    <Position X="14.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAACAAAAAAAAACAAAAAgAAAAA=</HashCode>
+      <FileName>ViewModels\UpdateListViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.ViewModels.UpdateSupportersViewModel" Collapsed="true">
+    <Position X="0.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAACAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\UpdateSupportersViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.ViewModels.UpdateViewModel" Collapsed="true">
+    <Position X="2.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQEAAAAAQAAAAAAAAAAAAAAACAAAAAgAIQAAAAAIAA=</HashCode>
+      <FileName>ViewModels\UpdateViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.ViewModels.UploadImageViewModel" Collapsed="true">
+    <Position X="4" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAEgAACCEAAAACQAAAAAAYAA=</HashCode>
+      <FileName>ViewModels\UploadImageViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.ViewModels.UserFormModel" Collapsed="true">
+    <Position X="5.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>ViewModels\UserFormModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.ViewModels.RegisterFormModel" Collapsed="true">
+    <Position X="14.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAACAAAAAAAAAAAAAAAAAAAAACAAAAAAAgIAg=</HashCode>
+      <FileName>ViewModels\UserFormModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.ViewModels.LoginFormModel" Collapsed="true">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAACAAAAAAAgAAA=</HashCode>
+      <FileName>ViewModels\UserFormModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.ViewModels.UserProfileFormModel" Collapsed="true">
+    <Position X="9.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAACAAAACIBAAAAAgAAAIQAAADAAAEhAAAAAg=</HashCode>
+      <FileName>ViewModels\UserProfileFormModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuhendislerBurada.Web.ViewModels.UserProfileViewModel" Collapsed="true">
+    <Position X="11" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEQAACABAAiICAAAAAgAAAIQAAADAQAEhAAAAAg=</HashCode>
+      <FileName>ViewModels\UserProfileViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="MuhendislerBurada.Web.Mailers.IUserMailer" Collapsed="true">
+    <Position X="0.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAEAAAIAAAgAAAEAAAAAAAA=</HashCode>
+      <FileName>Mailers\IUserMailer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,51 @@
+﻿@model MuhendislerBurada.ViewModels.PrivateMessageFormModel
+@using Microsoft.AspNet.Identity
+@{
+    ViewBag.Title = "Messages";
+    string uberSALAK_MVC = null;
+    string mal_MVC = null;
+}
+<h3 style="color:#f5f5f5;">Mevcut konusmalar</h3>
+<div class="well">
+    @if (ViewBag.ParticipantIds != null) {
+        for (int i = 0; i < ViewBag.ParticipantNames.Length; i++) {
+            uberSALAK_MVC = ViewBag.ParticipantNames[i];
+            mal_MVC = ViewBag.ParticipantIds[i];
+            if (uberSALAK_MVC != ViewBag.UserName) {
+                <h4>@Html.ActionLink(uberSALAK_MVC, "Messages", "Account", new { id = mal_MVC }, null) </h4>
+            }
+        }
+    }
+</div>
+
+    <h4 style="color:#f5f5f5;">@ViewBag.UserName ile olan konuşma</h4>
+
+    @using (Html.BeginForm()) {
+
+
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true)
+
+        @Html.HiddenFor(m => m.ReceiverUsername, new { Value = ViewBag.Username }) @Html.ValidationMessageFor(m => m.ReceiverUsername)
+        @Html.TextAreaFor(m => m.Message, new { @class = "span5", id = "InputGroupDesc", placeholder = "Mesajınızı yazınız", style = "display:block;" }) @Html.ValidationMessageFor(m => m.Message)
+
+        <input type="submit" class="btn btn-primary pull-left" value="Gönder" id="CreateGroup" style="margin-right:5px;" />
+                <input type="button" class="btn" value="Iptal" id="cancel" style="margin-right:5px;" onclick="window.location.href='@Url.Action("Index", "Home")'" />
+    }
+
+
+
+
+
+    @if (ViewBag.Conversation != null) {
+        foreach (MuhendislerBurada.Model.Models.PrivateMessage message in ViewBag.Conversation) {
+            <div class="well">
+                <h6>@if (User.Identity.GetUserId() == message.SenderUserId) { @User.Identity.GetUserName();
+                } else { @ViewBag.UserName;
+                } @message.MessageDate</h6>
+                @message.Message
+
+            </div>
+
+        }
+    }
